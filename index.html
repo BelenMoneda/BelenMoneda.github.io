@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title> Rellena tu CV </title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <form action="cv.jsp" method="get">
+        <label>Nombre:</label><br>
+        <input type="text" id="nombre" name="nombre" size="20" maxlength="30" required /> <br> <br>
+
+        <label>Apellidos:</label><br>
+        <input type="text" id="apellidos" name="apellidos" size="30" maxlength="40" required /><br> <br>
+
+        <label>Telefono:</label><br>
+        <input type="text" id="telefono" name="telefono" size="9" maxlength="9" /><br><br>
+
+        <label>Contraseña:</label><br>
+        <input type="password" name="contraseña" /> <br><br>
+
+        <label>DNI:</label><br>
+        <input type="text" id="dni" name="dni" size="9" maxlength="9" required/><br><br>
+
+        <label>Sexo:</label><br>
+        <input type="checkbox" id="hombre" name="hombre" value="sexo" checked/>
+        <label for="hombre"> hombre</label><br>
+        <input type="checkbox" id="mujer" name="mujer" value="sexo"/>
+        <label for="vehicle2"> mujer</label><br><br>
+
+        <label for="file"> Incluir mi foto </label>
+        <input type="file" value="file"> <br><br>
+
+        <input type="checkbox" id="suscripcion" name="suscripcion" value="suscripcion" checked>
+        <label for="suscripcion"> Suscribirme al boletin de novedades</label><br><br>
+
+       
+        <input type="submit" value="Guardar cambios" />
+        <input type="reset" value="Borrar los datos introducidos" />
+
+    </form>
+</body>
+
+</html>
